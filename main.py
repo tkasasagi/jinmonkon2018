@@ -24,7 +24,7 @@ args = parser.parse_args()
 batch_size = args.batch_size
 img_size = 512
 lr = 0.0002
-epoch = 100
+epoch = 10
 
 # input pipeline
 
