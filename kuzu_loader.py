@@ -2,7 +2,7 @@ import torch
 import torchvision
 from image_folder import ImageFolderWithPaths as ImageFolder
 
-kuzu = '/home/tarin/Desktop/kuzushiji'
+kuzu = 'home/jinmoncom2018/data/images'
 
 transforms = [torchvision.transforms.Resize((256,256)), torchvision.transforms.ToTensor()]
 #transforms = [torchvision.transforms.ToTensor()]

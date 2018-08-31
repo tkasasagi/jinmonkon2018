@@ -1,6 +1,6 @@
 import torch
 
-fh = open('/home/tarin/Desktop/kuzushiji/200014740_coordinate.csv')
+fh = open('data/hnsd00000_coordinate.csv')
 
 lines = []
 
@@ -13,7 +13,7 @@ for line in lines[1:]:
   obj[line.split(',')[1]] = []
 
 for line in lines[1:]:
-  if "U+7D66" in line:
+  if "U+306F" in line:
     linesp = line.split(',')
     obj[linesp[1]].append([int(linesp[2]),int(linesp[3]),int(linesp[6]),int(linesp[7])])
 

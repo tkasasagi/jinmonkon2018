@@ -38,7 +38,7 @@ epoch = 10
 #                            shuffle=True, num_workers=2)
 
 
-kuzu = '/home/tarin/Desktop/kuzushiji'
+kuzu = 'data/images'
 
 transforms = [torchvision.transforms.Resize((img_size,img_size)), torchvision.transforms.ToTensor()]
 transforms_keep = [torchvision.transforms.ToTensor()]
@@ -118,8 +118,8 @@ for i in range(epoch):
             print(loss)
             overlay_real = (y_*0.2 + x*0.8)
             overlay_gen = (y*0.2 + x*0.8)
-            v_utils.save_image(x.cpu().data,"./result/original_image_{}_{}.png".format(i,_))
-            v_utils.save_image(overlay_real.cpu().data,"./result/label_image_{}_{}.png".format(i,_))
+            #v_utils.save_image(x.cpu().data,"./result/original_image_{}_{}.png".format(i,_))
+            #v_utils.save_image(overlay_real.cpu().data,"./result/label_image_{}_{}.png".format(i,_))
             v_utils.save_image(overlay_gen.cpu().data,"./result/gen_image_{}_{}.png".format(i,_))
             torch.save(generator,'./model/{}.pkl'.format(args.network))    
 
