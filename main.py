@@ -38,7 +38,7 @@ epoch = 10
 #                            shuffle=True, num_workers=2)
 
 
-kuzu = 'data/images'
+kuzu = '/home/tarin/Desktop/kuzushiji'
 
 transforms = [torchvision.transforms.Resize((img_size,img_size)), torchvision.transforms.ToTensor()]
 transforms_keep = [torchvision.transforms.ToTensor()]

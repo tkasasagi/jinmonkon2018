@@ -1,6 +1,6 @@
 import torch
 
-fh = open('data/hnsd00000_coordinate.csv')
+fh = open('/home/tarin/Desktop/kuzushiji/200021712_coordinate.csv')
 
 lines = []
 
