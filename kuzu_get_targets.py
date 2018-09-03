@@ -8,10 +8,10 @@ fh2 = open(csv_loc + '200003076/200003076_coordinate.csv')
 
 num_char = 49
 char2ind = {}
-char2ind['U+306E'] = 0
-#char2ind['U+898B'] = 0
-char2ind['U+306B'] = 1
-#char2ind['U+3048'] = 1
+#char2ind['U+306E'] = 0
+char2ind['U+898B'] = 0
+#char2ind['U+306B'] = 1
+char2ind['U+3048'] = 1
 
 char2ind['U+306B'] = 2
 '''
