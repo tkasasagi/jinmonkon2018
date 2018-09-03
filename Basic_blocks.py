@@ -18,10 +18,10 @@ def conv_block(in_dim,out_dim,act_fn):
     return model
 
 
-def conv_trans_block(in_dim,out_dim,act_fn):
+def conv_trans_block(in_dim,out_dim,act_fn,norm_func):
     model = nn.Sequential(
         nn.ConvTranspose2d(in_dim,out_dim, kernel_size=3, stride=2, padding=1,output_padding=1),
-        nn.BatchNorm2d(out_dim),
+        norm_func(out_dim),
         act_fn,
     )
     return model
@@ -32,11 +32,12 @@ def maxpool():
     return pool
 
 
-def conv_block_2(in_dim,out_dim,act_fn):
+def conv_block_2(in_dim,out_dim,act_fn,norm_func):
+
     model = nn.Sequential(
         conv_block(in_dim,out_dim,act_fn),
         nn.Conv2d(out_dim,out_dim, kernel_size=3, stride=1, padding=1),
-        nn.BatchNorm2d(out_dim),
+        norm_func(out_dim),
     )
     return model    
 
