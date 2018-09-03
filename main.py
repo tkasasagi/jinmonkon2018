@@ -110,7 +110,7 @@ for i in range(epoch):
         
         satel_image = image*1.0
 
-        img_file = file_loc[0].split('/')[4].rstrip('.jpg')
+        img_file = file_loc[0].split('/')[3].rstrip('.jpg')
 
 
         if file_loc[0] in test_images:

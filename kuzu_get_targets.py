@@ -1,4 +1,4 @@
-csv_loc = '/home/tarin/kuzushiji_detect/data/'
+csv_loc = '/home/tarin/jinmoncom2018/data/'
 
 import torch
 
