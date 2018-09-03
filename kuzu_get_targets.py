@@ -9,8 +9,12 @@ fh2 = open(csv_loc + '200003076/200003076_coordinate.csv')
 num_char = 49
 char2ind = {}
 char2ind['U+306E'] = 0
+#char2ind['U+898B'] = 0
 char2ind['U+306B'] = 1
-char2ind['U+3066'] = 2
+#char2ind['U+3048'] = 1
+
+char2ind['U+306B'] = 2
+'''
 char2ind['U+3057'] = 3
 char2ind['U+306F'] = 4
 char2ind['U+3068'] = 5
@@ -60,7 +64,7 @@ char2ind['U+3079'] = 45
 char2ind['U+3031'] = 46
 char2ind['U+3046'] = 47
 char2ind['U+3080'] = 48
-
+'''
 lines = []
 
 header = fh1.readline()
